@@ -153,7 +153,7 @@ def test_loop():
     if action_state == 6:
         print(datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
         # press_combination('alt', 'tab')
-        # TODO check if @state-6-check or @capcha-ceck or @turnoff-check
+
         if pyautogui.locateOnScreen(step_to_image_name['connect'], confidence=0.9) or \
                 pyautogui.locateOnScreen(step_to_image_name['reconnect'], confidence=0.9):
             search_and_click_on_image(step_to_image_name['reconnect'], 0.9)
